@@ -29,7 +29,7 @@ public class ParameterizationTest extends HotelAppBusinessFunctions {
     @Before
     public void setUp() throws Exception {
         properties = new Properties();
-        properties.load(new FileInputStream(".\\src\\test\\java\\tests\\SharedUIMap.properties"));
+        properties.load(new FileInputStream(".\\configurations\\SharedUIMap.properties"));
         System.setProperty("webdriver.gecko.driver", "D:\\Users\\muadnan\\Downloads\\geckodriver-v0.16.1-win64\\geckodriver.exe");
         driver = new FirefoxDriver();
         baseUrl = "http://adactin.com/";
