@@ -47,6 +47,7 @@ public class SharedUIMapTest {
         new Select(driver.findElement(By.id("location"))).selectByVisibleText("Sydney");
         driver.findElement(By.id("Submit")).click();
         String sydneyLocation = driver.findElement(By.xpath(".//*[@id='location_1']")).getAttribute("value");
+        ??????????????????????????????????????
         if(sydneyLocation.equalsIgnoreCase("Sydney")) {
             System.out.println("Search OK");
         }
